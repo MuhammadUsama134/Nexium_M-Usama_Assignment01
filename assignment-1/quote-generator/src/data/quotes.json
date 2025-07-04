@@ -1,0 +1,222 @@
+{
+  "inspirational": [
+    {
+      "id": 1,
+      "text": "The only way to do great work is to love what you do.",
+      "author": "Steve Jobs",
+      "category": "inspirational"
+    },
+    {
+      "id": 2,
+      "text": "Innovation distinguishes between a leader and a follower.",
+      "author": "Steve Jobs",
+      "category": "inspirational"
+    },
+    {
+      "id": 3,
+      "text": "Your work is going to fill a large part of your life, and the only way to be truly satisfied is to do what you believe is great work.",
+      "author": "Steve Jobs",
+      "category": "inspirational"
+    },
+    {
+      "id": 4,
+      "text": "The future belongs to those who believe in the beauty of their dreams.",
+      "author": "Eleanor Roosevelt",
+      "category": "inspirational"
+    },
+    {
+      "id": 5,
+      "text": "It is during our darkest moments that we must focus to see the light.",
+      "author": "Aristotle",
+      "category": "inspirational"
+    },
+    {
+      "id": 6,
+      "text": "Success is not final, failure is not fatal: it is the courage to continue that counts.",
+      "author": "Winston Churchill",
+      "category": "inspirational"
+    },
+    {
+      "id": 7,
+      "text": "The only impossible journey is the one you never begin.",
+      "author": "Tony Robbins",
+      "category": "inspirational"
+    },
+    {
+      "id": 8,
+      "text": "Believe you can and you're halfway there.",
+      "author": "Theodore Roosevelt",
+      "category": "inspirational"
+    }
+  ],
+  "funny": [
+    {
+      "id": 9,
+      "text": "I'm not superstitious, but I am a little stitious.",
+      "author": "Michael Scott",
+      "category": "funny"
+    },
+    {
+      "id": 10,
+      "text": "I told my wife she was drawing her eyebrows too high. She looked surprised.",
+      "author": "Anonymous",
+      "category": "funny"
+    },
+    {
+      "id": 11,
+      "text": "I haven't slept for ten days, because that would be too long.",
+      "author": "Mitch Hedberg",
+      "category": "funny"
+    },
+    {
+      "id": 12,
+      "text": "The early bird might get the worm, but the second mouse gets the cheese.",
+      "author": "Willie Nelson",
+      "category": "funny"
+    },
+    {
+      "id": 13,
+      "text": "I'm reading a book about anti-gravity. It's impossible to put down!",
+      "author": "Anonymous",
+      "category": "funny"
+    },
+    {
+      "id": 14,
+      "text": "Why don't scientists trust atoms? Because they make up everything!",
+      "author": "Anonymous",
+      "category": "funny"
+    },
+    {
+      "id": 15,
+      "text": "I used to hate facial hair, but then it grew on me.",
+      "author": "Anonymous",
+      "category": "funny"
+    }
+  ],
+  "life": [
+    {
+      "id": 16,
+      "text": "Life is what happens to you while you're busy making other plans.",
+      "author": "John Lennon",
+      "category": "life"
+    },
+    {
+      "id": 17,
+      "text": "The purpose of our lives is to be happy.",
+      "author": "Dalai Lama",
+      "category": "life"
+    },
+    {
+      "id": 18,
+      "text": "Life is really simple, but we insist on making it complicated.",
+      "author": "Confucius",
+      "category": "life"
+    },
+    {
+      "id": 19,
+      "text": "In the end, we will remember not the words of our enemies, but the silence of our friends.",
+      "author": "Martin Luther King Jr.",
+      "category": "life"
+    },
+    {
+      "id": 20,
+      "text": "The only way to make sense out of change is to plunge into it, move with it, and join the dance.",
+      "author": "Alan Watts",
+      "category": "life"
+    },
+    {
+      "id": 21,
+      "text": "Life is 10% what happens to you and 90% how you react to it.",
+      "author": "Charles R. Swindoll",
+      "category": "life"
+    },
+    {
+      "id": 22,
+      "text": "Be yourself; everyone else is already taken.",
+      "author": "Oscar Wilde",
+      "category": "life"
+    },
+    {
+      "id": 23,
+      "text": "Yesterday is history, tomorrow is a mystery, today is a gift of God, which is why we call it the present.",
+      "author": "Bill Keane",
+      "category": "life"
+    }
+  ],
+  "wisdom": [
+    {
+      "id": 24,
+      "text": "The only true wisdom is in knowing you know nothing.",
+      "author": "Socrates",
+      "category": "wisdom"
+    },
+    {
+      "id": 25,
+      "text": "In the middle of difficulty lies opportunity.",
+      "author": "Albert Einstein",
+      "category": "wisdom"
+    },
+    {
+      "id": 26,
+      "text": "The journey of a thousand miles begins with one step.",
+      "author": "Lao Tzu",
+      "category": "wisdom"
+    },
+    {
+      "id": 27,
+      "text": "Two things are infinite: the universe and human stupidity; and I'm not sure about the universe.",
+      "author": "Albert Einstein",
+      "category": "wisdom"
+    },
+    {
+      "id": 28,
+      "text": "A room without books is like a body without a soul.",
+      "author": "Marcus Tullius Cicero",
+      "category": "wisdom"
+    },
+    {
+      "id": 29,
+      "text": "The fool doth think he is wise, but the wise man knows himself to be a fool.",
+      "author": "William Shakespeare",
+      "category": "wisdom"
+    }
+  ],
+  "success": [
+    {
+      "id": 30,
+      "text": "Success is not the key to happiness. Happiness is the key to success.",
+      "author": "Albert Schweitzer",
+      "category": "success"
+    },
+    {
+      "id": 31,
+      "text": "Don't be afraid to give up the good to go for the great.",
+      "author": "John D. Rockefeller",
+      "category": "success"
+    },
+    {
+      "id": 32,
+      "text": "The way to get started is to quit talking and begin doing.",
+      "author": "Walt Disney",
+      "category": "success"
+    },
+    {
+      "id": 33,
+      "text": "Success is walking from failure to failure with no loss of enthusiasm.",
+      "author": "Winston Churchill",
+      "category": "success"
+    },
+    {
+      "id": 34,
+      "text": "The successful warrior is the average man with laser-like focus.",
+      "author": "Bruce Lee",
+      "category": "success"
+    },
+    {
+      "id": 35,
+      "text": "Success is not how high you have climbed, but how you make a positive difference to the world.",
+      "author": "Roy T. Bennett",
+      "category": "success"
+    }
+  ]
+}
