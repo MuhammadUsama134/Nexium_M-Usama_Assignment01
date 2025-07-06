@@ -5,7 +5,8 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Button } from "@/components/ui/button"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 import { Badge } from "@/components/ui/badge"
-import { RefreshCw, Sparkles, BookOpen } from "lucide-react"
+import { Alert, AlertDescription } from "@/components/ui/alert"
+import { RefreshCw, Sparkles, AlertCircle, BookOpen } from "lucide-react"
 import { QuoteCard } from "./quote-card"
 import { quoteService } from "@/lib/quote-service"
 import type { Quote, QuoteCategory } from "@/types/quote"
@@ -43,10 +44,12 @@ export function QuoteGenerator() {
   const [displayedQuotes, setDisplayedQuotes] = useState<Quote[]>([])
   const [previousQuoteIds, setPreviousQuoteIds] = useState<number[]>([])
   const [isLoading, setIsLoading] = useState(false)
+  const [error, setError] = useState<string>("")
 
   const fetchQuotes = useCallback(
     async (category: string, isRefresh = false) => {
       setIsLoading(true)
+      setError("")
 
       try {
         const excludeIds = isRefresh ? previousQuoteIds : []
@@ -56,9 +59,12 @@ export function QuoteGenerator() {
           setDisplayedQuotes(response.quotes)
           setPreviousQuoteIds(response.quotes.map((quote) => quote.id))
         } else {
-          
+          setError(response.error || "Failed to fetch quotes")
           setDisplayedQuotes([])
         }
+      } catch (err) {
+        setError(err instanceof Error ? err.message : "An unexpected error occurred")
+        setDisplayedQuotes([])
       } finally {
         setIsLoading(false)
       }
@@ -147,6 +153,14 @@ export function QuoteGenerator() {
           </CardContent>
         </Card>
 
+        {/* Error Display */}
+        {error && (
+          <Alert variant="destructive" className="max-w-2xl mx-auto mb-8">
+            <AlertCircle className="h-4 w-4" />
+            <AlertDescription className="text-base">{error}</AlertDescription>
+          </Alert>
+        )}
+
         {/* Selected Category Display */}
         {selectedCategoryInfo && (
           <div className="text-center mb-8">
@@ -196,6 +210,17 @@ export function QuoteGenerator() {
               <QuoteCard key={quote.id} quote={quote} index={index} />
             ))}
           </div>
+        )}
+
+        {/* Empty State */}
+        {!isLoading && selectedCategory && displayedQuotes.length === 0 && !error && (
+          <Card className="max-w-md mx-auto">
+            <CardContent className="p-8 text-center">
+              <BookOpen className="h-12 w-12 text-gray-400 mx-auto mb-4" />
+              <p className="text-gray-600 text-lg">No quotes available for this category.</p>
+              <p className="text-gray-500 text-sm mt-2">Please try selecting a different category.</p>
+            </CardContent>
+          </Card>
         )}
 
         {/* Footer */}
