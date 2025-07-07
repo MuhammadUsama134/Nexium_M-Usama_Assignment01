@@ -48,69 +48,36 @@ Before running this application, ensure you have the following installed:
 
 Follow these steps to set up the development environment:
 
-### 1. Clone the Repository
-\`\`\`bash
-git clone https://github.com/MuhammadUsama134/Nexium_M-Usama_Assignment01.git
-cd assignment-1
-cd quote-generator
-\`\`\`
+### 1. Clone the Repository (using bash)
+
+- git clone https://github.com/MuhammadUsama134/Nexium_M-Usama_Assignment01.git
+- cd assignment-1
+- cd quote-generator
 
 ### 2. Install Dependencies
 Using npm:
-\`\`\`bash
+\`\`\`
 npm install
 \`\`\`
 
 Using yarn:
-\`\`\`bash
+\`\`\`
 yarn install
 \`\`\`
 
 ### 3. Run the Development Server
 Using npm:
-\`\`\`bash
+\`\`\`
 npm run dev
 \`\`\`
 
 Using yarn:
-\`\`\`bash
+\`\`\`
 yarn dev
 \`\`\`
 
 ### 4. Open in Browser
 Navigate to [http://localhost:3000](http://localhost:3000) to view and use the application.
-
-## 📁 Project Structure
-
-\`\`\`
-quote-generator/
-├── src/
-│   ├── app/                    # Next.js App Router
-│   │   ├── globals.css         # Global styles and Tailwind imports
-│   │   ├── layout.tsx          # Root layout with metadata
-│   │   └── page.tsx            # Home page component
-│   ├── components/             # Reusable React components
-│   │   ├── ui/                 # Shadcn UI components (auto-generated)
-│   │   │   ├── button.tsx
-│   │   │   ├── card.tsx
-│   │   │   ├── select.tsx
-│   │   │   └── ...
-│   │   ├── quote-generator.tsx # Main application component
-│   │   └── quote-card.tsx      # Individual quote display component
-│   ├── data/                   # Application data
-│   │   └── quotes.json         # Quote database (35+ quotes)
-│   ├── lib/                    # Utility functions and services
-│   │   ├── utils.ts            # Shadcn utility functions
-│   │   └── quote-service.ts    # Quote management service
-│   └── types/                  # TypeScript type definitions
-│       └── quote.ts            # Quote and category interfaces
-├── public/                     # Static assets
-├── components.json             # Shadcn UI configuration
-├── next.config.js              # Next.js configuration
-├── package.json                # Dependencies and scripts
-├── tailwind.config.ts          # Tailwind CSS configuration
-└── tsconfig.json              # TypeScript configuration
-\`\`\`
 
 ### Key Directories Explained
 
@@ -126,9 +93,11 @@ quote-generator/
 
 The application uses a structured JSON file (`src/data/quotes.json`) to manage quote data:
 
-\`\`\`json
+\`\`\`json \`\`\`
+
 {
-  "category_name": [
+  "category_name":
+  [
     {
       "id": 1,
       "text": "Quote text here",
@@ -137,7 +106,6 @@ The application uses a structured JSON file (`src/data/quotes.json`) to manage q
     }
   ]
 }
-\`\`\`
 
 ### Adding New Quotes
 
@@ -146,14 +114,15 @@ To add new quotes to the application:
 1. **Open the data file**: Navigate to `src/data/quotes.json`
 2. **Choose a category**: Select an existing category or create a new one
 3. **Add quote object**: Include the required fields:
-   \`\`\`json
+   
+   \`\`\`json \`\`\`
+   
    {
      "id": 999,                    // Unique identifier
      "text": "Your quote here",    // The actual quote text
      "author": "Author Name",     // Quote attribution
      "category": "category_name"  // Must match the category key
    }
-   \`\`\`
 
 ### Adding New Categories
 
@@ -161,13 +130,14 @@ To add a new quote category:
 
 1. **Update quotes.json**: Add a new category section with quotes
 2. **Update quote-generator.tsx**: Add the new category to the `QUOTE_CATEGORIES` array:
-   \`\`\`typescript
+   
+   \`\`\`typescript  \`\`\`
+   
    {
      value: "new_category",
      label: "New Category",
      description: "Description of the new category"
    }
-   \`\`\`
 
 ### Data Management Features
 
@@ -178,7 +148,7 @@ To add a new quote category:
 
 ## 🛠️ Development Scripts
 
-\`\`\`bash
+\`\`\`bash \`\`\`
 # Start development server
 npm run dev
 
@@ -187,4 +157,3 @@ npm run build
 
 # Start production server
 npm start
-\`\`\`
